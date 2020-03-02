@@ -90,7 +90,7 @@ private:
         }
 
         int m = (rx + lx) / 2;
-        long_pair a = get(l, r, lx, m, 2 * idx + 1),
+        T a = get(l, r, lx, m, 2 * idx + 1),
         b = get(l, r, m, rx, 2 * idx + 2);
 
         return operate(a, b);
